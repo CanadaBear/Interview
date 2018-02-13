@@ -46,18 +46,6 @@ The WHERE clause is used to filter records.
 The WHERE clause is used to extract only those records that fulfill a specified condition.
 For example: SELECT column1, column2, ... FROM table_name WHERE condition;
 
-The following operators can be used in the WHERE clause:
-Operator	Description
-=	         Equal
-<>	       Not equal. Note: In some versions of SQL this operator may be written as !=
->	         Greater than
-<	         Less than
->=	       Greater than or equal
-<=	       Less than or equal
-BETWEEN	   Between an inclusive range
-LIKE	     Search for a pattern
-IN	       To specify multiple possible values for a column
-
 The SQL AND, OR and NOT Operators
 The WHERE clause can be combined with AND, OR, and NOT operators.
 The AND and OR operators are used to filter records based on more than one condition:
