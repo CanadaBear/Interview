@@ -46,7 +46,6 @@ The WHERE clause is used to filter records.
 The WHERE clause is used to extract only those records that fulfill a specified condition.
 For example: SELECT column1, column2, ... FROM table_name WHERE condition;
 
-Operators in The WHERE Clause
 The following operators can be used in the WHERE clause:
 Operator	Description
 =	         Equal
