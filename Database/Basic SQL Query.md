@@ -50,14 +50,14 @@ Operators in The WHERE Clause
 The following operators can be used in the WHERE clause:
 Operator	Description
 =	         Equal
-<>	         Not equal. Note: In some versions of SQL this operator may be written as !=
+<>	       Not equal. Note: In some versions of SQL this operator may be written as !=
 >	         Greater than
 <	         Less than
->=	         Greater than or equal
-<=	         Less than or equal
-BETWEEN	     Between an inclusive range
+>=	       Greater than or equal
+<=	       Less than or equal
+BETWEEN	   Between an inclusive range
 LIKE	     Search for a pattern
-IN	         To specify multiple possible values for a column
+IN	       To specify multiple possible values for a column
 
 The SQL AND, OR and NOT Operators
 The WHERE clause can be combined with AND, OR, and NOT operators.
