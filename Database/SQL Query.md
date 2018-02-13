@@ -100,11 +100,6 @@ The LIKE operator is used in a WHERE clause to search for a specified pattern in
 There are two wildcards used in conjunction with the LIKE operator:
 % - The percent sign represents zero, one, or multiple characters
 _ - The underscore represents a single character
-Note: MS Access uses a question mark (?) instead of the underscore (_).
-In MS Access and SQL Server you can also use:
-[charlist] - Defines sets and ranges of characters to match
-[^charlist] or [!charlist] - Defines sets and ranges of characters NOT to match
-The wildcards can also be used in combinations!
 
 The SQL IN Operator
 The IN operator allows you to specify multiple values in a WHERE clause.

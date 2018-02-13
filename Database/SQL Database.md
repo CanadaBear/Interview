@@ -53,6 +53,28 @@ DEFAULT - Sets a default value for a column when no value is specified
 INDEX - Used to create and retrieve data from the database very quickly
 Auto-increment - allows a unique number to be generated automatically when a new record is inserted into a table.
 
+Data type								Description
+CHARACTER(n)							Character string. Fixed-length n
+VARCHAR(n) or CHARACTER VARYING(n)		Character string. Variable length. Maximum length n
+BINARY(n)								Binary string. Fixed-length n
+BOOLEAN	Stores							TRUE or FALSE values
+VARBINARY(n) or BINARY VARYING(n)		Binary string. Variable length. Maximum length n
+INTEGER(p)								Integer numerical (no decimal). Precision p
+SMALLINT								Integer numerical (no decimal). Precision 5
+Integer 								Integer numerical (no decimal). Precision 10
+BIGINT									Integer numerical (no decimal). Precision 19
+DECIMAL(p,s)							Exact numerical, precision p, scale s. Example: decimal(5,2) is a number that has 3 digits before the decimal and 2 digits after the decimal
+NUMERIC(p,s)							Exact numerical, precision p, scale s. (Same as DECIMAL)
+FLOAT(p)								Approximate numerical, mantissa precision p. A floating number in base 10 exponential notation. The size argument for this type consists of a single number specifying the minimum precision
+DOUBLE PRECISION						Approximate numerical, mantissa precision 16
+DATE									Stores year, month, and day values
+TIME									Stores hour, minute, and second values
+TIMESTAMP								Stores year, month, day, hour, minute, and second values
+INTERVAL								Composed of a number of integer fields, representing a period of time, depending on the type of interval
+ARRAY									A set-length and ordered collection of elements
+MULTISET								A variable-length and unordered collection of elements
+XML										Stores XML data
+
 SQL CREATE VIEW Statement
 In SQL, a view is a virtual table based on the result-set of an SQL statement.
 A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
@@ -73,6 +95,23 @@ db.Execute(txtSQL,txtUserId);
 Note that parameters are represented in the SQL statement by a @ marker.
 The SQL engine checks each parameter to ensure that it is correct for its column and are treated literally, and not as part of the SQL to be executed.
 
-SQL Data Types
-Each column in a database table is required to have a name and a data type.
-An SQL developer must decide what type of data that will be stored inside each column when creating a table. The data type is a guideline for SQL to understand what type of data is expected inside of each column, and it also identifies how SQL will interact with the stored data.
+Although different kinds of databases are available, the relational database is the most common. Data in a relational database is stored in tables, which consist of rows and columns. A set of table definitions is referred to as a schema. Most tables have keys. One of the keys is usually designated the primary key. A table can be linked to another table using foreign key. A foreign key is a key value taken form the other table (usually from a primary key). When every foreign key value in one table exists as a key in the table it references, the database has referential integrity.
+Relational Database Design Process
+Step 1: Define the Purpose of the Database (Requirement Analysis)
+Step 2: Gather Data, Organize in tables and Specify the Primary Keys
+Step 3: Create Relationships among Tables
+Step 4: Refine & Normalize the Design
+
+First Normal Form (1NF): A table is 1NF if every cell contains a single value, not a list of values. This properties is known as atomic.
+Second Normal Form (2NF): A table is 2NF, if it is 1NF and every non-key column is fully dependent on the primary key.
+Third Normal Form (3NF): A table is 3NF, if it is 2NF and the non-key columns are independent of each other’s.
+Entity Integrity Rule: The primary key cannot contain NULL. Otherwise, it cannot uniquely identify the row.
+Referential Integrity Rule: Each foreign key value must be matched to a primary key value in the table referenced (or parent table).
+
+Databases Transactions
+A transaction groups a set of related database manipulation together into single unit. If any operation within the transaction fails, the entire transaction fails, and any changes made by the transaction are abandoned (roll back). Conversely, if all the operations succeed, then all the changes are committed together as a group.
+The four properties (ACID) of a traction are as follows:
+Atomicity- the database system guarantees that either all operations within the transaction succeed or else they all fail.
+Consistency- the transaction must ensure that the database is in a correct, consistent state at the start and the end of the transaction.
+Isolation- all the changes to the database within a transaction are isolated from all other queries and transactions until the transaction is committed.
+Durability- when committed, changes made in a transaction are permanent.
