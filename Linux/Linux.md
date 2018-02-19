@@ -84,7 +84,8 @@ LinuxÏµÍ³ÊÇÒ»¸ö¶àÓÃ»§¶àÈÎÎñµÄ·ÖÊ±²Ù×÷ÏµÍ³£¬ÈÎºÎÒ»¸öÒªÊ¹ÓÃÏµÍ³×ÊÔ´µÄÓÃ»§£¬¶¼±ØÐëÊ
 
 Linux vi/vim
 ËùÓÐµÄ Unix Like ÏµÍ³¶¼»áÄÚ½¨ vi ÎÄÊé±à¼­Æ÷£¬ÆäËûµÄÎÄÊé±à¼­Æ÷Ôò²»Ò»¶¨»á´æÔÚ¡£vim ¾ßÓÐ³ÌÐò±à¼­µÄÄÜÁ¦£¬¿ÉÒÔÖ÷¶¯µÄÒÔ×ÖÌåÑÕÉ«±æ±ðÓï·¨µÄÕýÈ·ÐÔ£¬·½±ã³ÌÐòÉè¼Æ¡£
-»ù±¾ÉÏ vi/vim ¹²·ÖÎªÈýÖÖÄ£Ê½£¬·Ö±ðÊÇÃüÁîÄ£Ê½£¨Command mode£©£¬ÊäÈëÄ£Ê½£¨Insert mode£©ºÍµ×ÏßÃüÁîÄ£Ê½£¨Last line mode£©¡£ ÕâÈýÖÖÄ£Ê½µÄ×÷ÓÃ·Ö±ðÊÇ£º
+»ù±¾ÉÏ vi/vim ¹²·ÖÎªÈýÖÖÄ£Ê½£¬·Ö±ðÊÇÃüÁîÄ£Ê½£¨Command mode£©£¬ÊäÈëÄ£Ê½£¨Insert mode£©ºÍµ×ÏßÃüÁîÄ£Ê½£¨Last line mode£©¡£ 
+
 ÃüÁîÄ£Ê½£º
 ÓÃ»§¸Õ¸ÕÆô¶¯ vi/vim£¬±ã½øÈëÁËÃüÁîÄ£Ê½¡£´Ë×´Ì¬ÏÂÇÃ»÷¼üÅÌ¶¯×÷»á±»VimÊ¶±ðÎªÃüÁî£¬¶ø·ÇÊäÈë×Ö·û¡£±ÈÈçÎÒÃÇ´ËÊ±°´ÏÂi£¬²¢²»»áÊäÈëÒ»¸ö×Ö·û£¬i±»µ±×÷ÁËÒ»¸öÃüÁî¡£
 ÒÔÏÂÊÇ³£ÓÃµÄ¼¸¸öÃüÁî£º
